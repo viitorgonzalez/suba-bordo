@@ -1,4 +1,5 @@
 import { Sailboat, Anchor, Compass } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ServicesSection() {
   return (
@@ -11,7 +12,7 @@ export default function ServicesSection() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card de Serviço 1 */}
+
           <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex justify-center mb-4">
               <Sailboat size={48} className="text-blue-600" />
@@ -21,7 +22,7 @@ export default function ServicesSection() {
               Lanchas e motos aquáticas bem equipados para sua aventura ou relaxamento.
             </p>
           </div>
-          {/* Card de Serviço 2 */}
+
           <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex justify-center mb-4">
               <Compass size={48} className="text-blue-600" />
@@ -31,7 +32,7 @@ export default function ServicesSection() {
               Roteiros guiados pelos melhores pontos turísticos, com segurança e conforto.
             </p>
           </div>
-          {/* Card de Serviço 3 */}
+
           <div className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex justify-center mb-4">
               <Anchor size={48} className="text-blue-600" />
@@ -41,6 +42,11 @@ export default function ServicesSection() {
               Serviços especializados para manter sua embarcação sempre pronta para navegar.
             </p>
           </div>
+        </div>
+        <div className="lg:col-span-3 md:col-span-2 flex justify-center mt-8">
+          <Link href="/servicos" className="bg-yellow-400 hover:bg-yellow-500 text-blue-800 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105">
+            Cadastrar embarcação
+          </Link>
         </div>
       </div>
     </section>
