@@ -1,17 +1,15 @@
-import AboutSection from '@/components/AboutSection';
-import ContactSection from '@/components/ContactSection';
-import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
+import AboutSection from '@/components/homepage/AboutSection';
+import ContactSection from '@/components/homepage/ContactSection';
+import HeroSection from '@/components/homepage/HeroSection';
+import ServicesSection from '@/components/homepage/ServicesSection';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">      
+    <div className="flex flex-col min-h-screen bg-gray-50">
 
-      <main className="flex-grow"> {/* Conteúdo principal da página */}
-        {/* Seção Hero */}
-          <HeroSection />
+      <main className="flex-grow">
+        <HeroSection />
 
-        {/* Seção de Destaques/Serviços */}
         <ServicesSection />
 
         <AboutSection />
